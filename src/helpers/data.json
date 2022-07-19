@@ -1,0 +1,16 @@
+[
+    {
+        "name": "HTW - Trewskowallee",
+        "HTW": {
+            "name": "TRESKOWALLEE",
+            "image": 23
+        }
+    },
+    {
+        "name": "HTW - Wilhelminenhof",
+        "HTW": {
+            "name": "Wilhelminenhof",
+            "image": 42
+        }
+    }
+]
