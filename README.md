@@ -6,3 +6,5 @@ Zum Starten der App:
 Deploy: 
 1. npm run build (im Terminal, Ordner muss gewählt sein)
 2. Build Ordner auf netlify hochladen
+
+test
