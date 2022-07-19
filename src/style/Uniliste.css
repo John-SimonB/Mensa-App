@@ -1,0 +1,128 @@
+.BodyUni {
+  text-align: center;
+  margin-bottom: 70px;
+  margin-top: 15vh;
+  background-color: #E5E5E5;
+}
+.line {
+  background-color: #E5E5E5;
+  position: fixed;
+  top: 75px;
+  height: 11vh;
+  color: #E5E5E5;
+  width: 100%;
+  z-index: 1;
+}
+.Buttons h3 {
+  font-size: 2.3vh;
+  color: black;
+  text-decoration: none;
+  }
+
+/* gesamte Uniliste */
+.uniListe {
+  font-size: large;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  margin-top: 20vh;
+}
+
+/* Uni ITEM STYLING */
+
+.uniItem {
+  background-color: white;
+  border-radius: 20px;
+  width: 300px;
+  height: 500px;
+  margin: 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.uniItem:hover {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  background-color: #DCC3AA;
+  color: white;
+  border-radius: 25px;
+}
+
+.uniItem div {
+  width: 100%;
+  height: 400px;
+  width: 80%;
+  padding-left: 10px;
+  margin-left: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: fill;
+  object-position: right;
+}
+
+@media only screen and (max-width: 1300px) {
+  .line {
+    background-color: #E5E5E5;
+    position: fixed;
+    top: 75px;
+    height: 14vh;
+    color: #E5E5E5;
+    width: 100%;
+  }
+
+  .uniListe {
+    font-size: medium;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .uniItem {
+    width: 200px;
+    height: 275px;
+  }
+
+  .uniItem:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .uniItem div {
+    margin-left: 15px;
+    height: 200px;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .line {
+    background-color: #E5E5E5;
+    position: fixed;
+    top: 75px;
+    height: 12vh;
+    color: #E5E5E5;
+    width: 100%;
+
+  }
+
+  .uniListe {
+    grid-template-columns: 1fr 1fr;
+    font-size: small;
+  }
+  
+  .uniItem {
+    width: 150px;
+    height: 180px;
+  }
+
+  .uniItem:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .uniItem div {
+    margin-left: 10px;
+    height: 150px;
+  }
+}

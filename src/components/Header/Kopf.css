@@ -1,0 +1,47 @@
+.Bild {
+  height: 75px;
+  background-image: url(../../assets/Salat1.jpeg);
+  /* background-color: black; */
+  background-attachment: scroll;
+  background-position: 0px -700px;
+  z-index: 99;
+  width: 115%;
+  opacity: 50%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  padding: 0;
+}
+.Grau {
+  height: 75px;
+  width: 100%;
+  background-color: #e5e5e5;
+  opacity: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.Überschrift {
+  color: black;
+  text-align: center;
+  opacity: 100%;
+  position: fixed;
+  top: 2vh;
+  width: 100%;
+  z-index: 100;
+}
+
+@media only screen and (min-width: 600px) and ( max-width: 1300px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .Überschrift {
+    text-align: center;
+
+    z-index: 50;
+  }
+  .Bild {
+    width: 48vh;
+    z-index: 40;
+  }
+}

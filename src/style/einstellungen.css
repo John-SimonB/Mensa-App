@@ -1,0 +1,194 @@
+.Bodyeinstellungen {
+  text-align: center;
+  width: 170vh;
+  background-color: #e5e5e5;
+  padding-top: 1vh;
+}
+
+.Btnspeichern {
+  color: black;
+  margin-top: 28px;
+  height: 40px;
+  width: 18vh;
+  /* background-image: url(../components/Button/holzButton.jpg);  */
+  background-color: #DCC3AA;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 2.0vh;
+  margin-right: 25vh;
+}
+
+.Btnspeichern:hover{
+  border: 2px solid #ad8d74;
+}
+
+.custom-select {
+  position: absolute;
+  display: inline-block;
+  font-size: 14px;
+  color: #888;
+  margin-top: 25px;
+  left: 46.5vh;
+}
+
+/* ganzer Kasten */
+.custom-select select {
+  display: block;
+  width: 250px;
+  min-height: 35px;
+  background: #DCC3AA;
+  border-radius: 3px;
+  border: 2px solid #ad8d74;
+  outline: none;
+  padding: 0 20px 0 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+}
+
+/* schwarzer Pfeil für Auswahl */
+.custom-select::after {
+  content: '';
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: #222;
+  display: inline-block;
+  border-radius: 2px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+/* ausgeklappte Auswahl */
+.custom-select .selector-options {
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+  background: #DCC3AA;
+  color: black;
+  border-radius: 4px;
+  z-index: 1;
+  width: 96%;
+  position: absolute;
+  left: 2%;
+  top: -100%;
+}
+
+.custom-select .selector-options li {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.custom-select .selector-options li:hover {
+  background: #ad8d74;
+}
+
+.Info {
+  margin-top: 20px;
+  font-size: 2.2vh;
+}
+
+/* Desktop */
+.Bubbleeinstellungen {
+  padding-top: 3vh;
+  margin-left: 40vh;
+  border-radius: 40px;
+  width: 170;
+  margin-top: 15vh;
+  height: 65vh;
+  background-color: #cdcdcd;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Tablet */
+@media only screen and (min-width: 600px) and ( max-width: 1300px) {
+  .Bodyeinstellungen {
+    width: 75vh;
+  }
+  /* Graue Bubble */
+  .Bubbleeinstellungen {
+    margin-left: 10%;
+    border-radius: 40px;
+    width: 80%;
+    height: 80px;
+    background-color: #e5e5e5;
+    border: none;
+    box-shadow: none;
+  }
+
+  .Btnspeichern {
+    margin-right: 0vh;
+    margin-left: 35vh;
+  }
+
+  .custom-select {
+    margin-left: -36vh;
+  }
+
+  .custom-select select {
+    width: 28vh;
+  }
+}
+
+/* Smartphone */
+@media only screen and (max-width: 600px) {
+  .Bodyeinstellungen {
+    text-align: center;
+    width: 46vh;
+  }
+  /* Graue Bubble */
+  .Bubbleeinstellungen {
+    padding-top: 1%;
+    margin-left: 3vh;
+    margin-top: 15vh;
+    border-radius: 20px;
+    width: 40vh;
+    height: 62vh;
+    background-color: #e5e5e5;
+    border: none;
+    box-shadow: none;
+  }
+
+  .whitebubble {
+    background-color: white;
+  }
+
+  .Info{
+    margin-top: 0vh;
+  }
+  .Btnspeichern {
+    margin-right: 0vh;
+    margin-top: 90px;
+  }
+
+  .custom-select {
+    position: absolute;
+    display: inline-block;
+    margin-top: 25px;
+    left: 8.5vh;
+  }
+
+
+.custom-select .selector-options {
+  list-style: none;
+  padding: 5px 0;
+  margin: 0;
+  background: #DCC3AA;
+  color: black;
+  border-radius: 4px;
+  z-index: 1;
+  width: 56%;
+  position: absolute;
+  left: 2%;
+  top: -100%;
+}
+}

@@ -1,0 +1,110 @@
+.BodyMensa {
+  text-align: center;
+  margin-bottom: 70px;
+  margin-top: 19vh;
+  background-color: #E5E5E5;
+}
+
+
+.Buttons h3 {
+  font-size: 2.3vh;
+  color: black;
+  text-decoration: none;
+  }
+
+
+/* gesamte Uniliste */
+.mensaListe {
+  font-size: large;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  place-items: center;
+  margin-top: 20vh;
+}
+
+/* Uni ITEM STYLING */
+
+.mensaItem {
+  background-color: white;
+  border-radius: 20px;
+  width: 300px;
+  height: 500px;
+  margin: 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.mensaItem:hover {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  background-color: #DCC3AA;
+  color: white;
+  border-radius: 25px;
+}
+
+.mensaItem div {
+  width: 100%;
+  height: 400px;
+  width: 80%;
+  padding-left: 10px;
+  margin-left: 25px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  object-fit: fill;
+  object-position: right;
+}
+
+@media only screen and (max-width: 1300px) {
+  .mensaListe {
+    font-size: medium;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .mensaItem {
+    width: 200px;
+    height: 275px;
+  }
+
+  .mensaItem:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .mensaItem div {
+    margin-left: 15px;
+    height: 200px;
+  }
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .BodyMensa{
+    position: relative;
+    
+  }
+  .mensaListe {
+    grid-template-columns: 1fr 1fr;
+    font-size: 0.65rem;
+    margin-top: 8´10vh;
+  }
+  
+  .mensaItem {
+    width: 150px;
+    height: 180px;
+    position: relative;
+   
+  }
+
+  .mensaItem:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .mensaItem div {
+    margin-left: 10px;
+    height: 140px;
+  }
+}

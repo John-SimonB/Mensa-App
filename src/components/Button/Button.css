@@ -1,0 +1,83 @@
+:root {
+  --primary: #AD8D74;
+}
+
+.btn {
+  padding: 8px 20px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  background-color: var(--primary);
+}
+
+.btn:hover {
+  padding: 6px 18px;
+  transition: all 0.5s ease-out;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: 2px solid var(--primary);
+  transition: all 0.3s ease-out;
+}
+
+.btn--large{
+    padding: 12px 26px;
+    border-radius: 4px;
+    font-size: 20x;
+    color: white;
+}
+    
+    .btn--Berlin {
+      background-image: url(./holzButton.jpg); 
+      position: fixed;
+      width: 40%;
+      height: 5.5%;
+      left: 5%;
+      top: 10.5%;
+      border-radius: 15px;
+      z-index: 2;
+      margin-top: 2vh;
+    }
+    
+    .btn--Potsdam{
+      background-image: url(./holzButton.jpg); 
+      position: fixed;
+      width: 40%;
+      height: 5.5%;
+      left: 55%;
+      top: 10.5%;
+      border-radius: 15px;
+      z-index: 2;
+      margin-top: 2vh;
+    }
+
+
+    @media only screen and (max-width: 1300px) {
+      .btn--Berlin {
+        top: 10.5%;
+      }
+      
+      .btn--Potsdam{
+        top: 10.5%;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      .btn--Berlin {
+        top: 10%;
+        z-index: 5;
+
+      }
+      
+      .btn--Potsdam{
+        top: 10%;
+        z-index: 5;
+      }
+
+      .Btnspeichern{
+        color: black;
+      }
+    }

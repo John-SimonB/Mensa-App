@@ -1,0 +1,25 @@
+.leaflet-container {
+  width: 90vw;
+  height: 60vh;
+position: absolute;
+  border-radius: 20px;
+
+  margin-top: 10vh;
+  margin-left: 10vh;
+  border: 5px solid #ad8d74;
+
+}
+
+@media only screen and (min-width: 600px) and ( max-width: 1300px) {
+  .leaflet-container {
+    width: 60vh;
+    margin-left: 7vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .leaflet-container{
+    margin-left: 2.5vh;
+    position: absolute;
+  }
+}
